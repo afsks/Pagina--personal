@@ -26,10 +26,27 @@ header .nav{
 }
 
 
+/* .project--info_container:active .project--info_details{
+    margin-top: 0;
+} */
 
-.technologys .left{
-    box-shadow: 2em 0 40px #ffffff;
+
+.supports--container_cards{
+    width: min-content;
+    height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: contain;
+    scroll-snap-type: y proximity;
 }
-.technologys .right{
-    box-shadow: -2em 0 40px #ffffff;
+.supports--container_cards::-webkit-scrollbar {
+    width: 8px;
+    overflow-x: scroll;
+    background: transparent;
+}
+.supports--container_cards::-webkit-scrollbar-thumb {
+    background: var(--text-gray-700);
+    border-radius: 5px;
+}
+.supports--container_cards::-webkit-scrollbar-thumb:hover {
+    background: var(--text-gray-800);
 }

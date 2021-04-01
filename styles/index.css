@@ -137,7 +137,9 @@ main{
 .about--me{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +177,7 @@ main{
 }
 
 
-.technologys{
+.technologies{
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     grid-template-rows: 0.5fr 2fr;
@@ -185,7 +187,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 260px;
-    padding-top: 60px;
+    padding-top: 70px;
 }
 .technology--container_title{
     grid-column: 1/4;
@@ -203,10 +205,9 @@ main{
     line-height: 2.6rem;
 }
 .technology--container_slider{
+    grid-column: 1 / 4;
     width: 100%;
-    /* margin: 0 auto; */
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 40px;
     height: 100px;
@@ -249,16 +250,16 @@ main{
     cursor: pointer;
     filter: hue-rotate(45deg);
 }
-.technologys .shadow{
+.technologies .shadow{
     width: 100%;
     height: 100%;
 }
-.technologys .left{
+.technologies .left{
     position: relative;
     z-index: 50;
     box-shadow: 6em 0 40px #ffffff;
 }
-.technologys .right{
+.technologies .right{
     position: relative;
     z-index: 50;
     box-shadow: -6em 0 40px #ffffff;
@@ -268,7 +269,13 @@ main{
     width: 100%;
     min-width: 320px;
     height: auto;
-    margin-top: 80px;
+    padding-top: 100px;
+}
+.projects_container{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
     padding-bottom: 80px;
     background-color: var(--text-gray-900);
     color: white;
@@ -330,7 +337,7 @@ main{
     line-height: 1.8rem;
     text-align: center;
     color: var(--text-gray-100);
-    margin: 5px 0;
+    margin: 10px 0;
 }
 .project--info_container{
     position: relative;
@@ -389,9 +396,98 @@ main{
 
 } */
 
-
-
-
+.supports{
+    /* display: flex; */
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1040px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* justify-content: center; */
+}
+.supports--detail_title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    /* align-self: center; */
+}
+.supports--detail_title h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    /* margin: ; */
+    margin-bottom: 20px;
+    color: var(--text-gray-900);
+}
+.supports--detail_title p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: var(--text-gray-900);
+}
+.supports--container_cards{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1040px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+.support_cards{
+    width: 297px;
+    height: 229.5px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+.support_cards{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.frontend-developer{
+    background-image: url('../assets/imgs/supports/frontend-developer.jpg');
+}
+.react-js{
+    background-image: url('../assets/imgs/supports/react-js.jpg');
+}
+.mobile-first{
+    background-image: url('../assets/imgs/supports/mobile-first.jpg');
+}
+/* .bootstrap{
+    background-image: url('../assets/imgs/supports/bootstrap.jpg');
+} */
+.html-css{
+    background-image: url('../assets/imgs/supports/html-css.jpg');
+}
+.supports--button_explore{
+    padding: 15px;
+    width: max-content;
+    height: 48px;
+    /* text-align: justify; */
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-gray-100);
+    background-color: var(--text-gray-900);
+    filter: drop-shadow(2px 2px 3px #474A57);
+}
 
 
 
