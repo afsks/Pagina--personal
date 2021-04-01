@@ -24,3 +24,12 @@ header .nav{
     align-items: center;
     height: 50%;
 }
+
+
+
+.technologys .left{
+    box-shadow: 2em 0 40px #ffffff;
+}
+.technologys .right{
+    box-shadow: -2em 0 40px #ffffff;
+}
